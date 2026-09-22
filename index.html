@@ -13,34 +13,24 @@
         content="Beyond Say No — an interactive youth-focused visual communication intervention for drug-risk recognition, misinformation awareness, and help-seeking."
     >
 
-    <meta name="theme-color" content="#110e10">
+    <meta name="theme-color" content="#120f17">
 
     <title>Beyond Say No | Interactive Drug-Risk Awareness</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Our stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================================================
-         APP WRAPPER
-    ========================================================== -->
-
     <div id="app">
-
-        <!-- =====================================================
-             HEADER
-        ====================================================== -->
 
         <header class="site-header">
 
@@ -61,10 +51,8 @@
 
             </button>
 
-
             <div class="header-right">
 
-                <!-- Progress appears during the intervention -->
                 <div
                     id="progressContainer"
                     class="progress-container"
@@ -72,29 +60,16 @@
                     hidden
                 >
 
-                    <span
-                        id="progressLabel"
-                        class="progress-label"
-                    >
+                    <span id="progressLabel" class="progress-label">
                         0 / 9
                     </span>
 
-                    <div
-                        class="progress-track"
-                        aria-hidden="true"
-                    >
-
-                        <div
-                            id="progressBar"
-                            class="progress-bar"
-                        ></div>
-
+                    <div class="progress-track" aria-hidden="true">
+                        <div id="progressBar" class="progress-bar"></div>
                     </div>
 
                 </div>
 
-
-                <!-- Home button -->
                 <button
                     id="headerHomeButton"
                     class="header-icon-button"
@@ -110,43 +85,20 @@
 
         </header>
 
-
-        <!-- =====================================================
-             MAIN APPLICATION AREA
-
-             JavaScript places every screen inside this element.
-        ====================================================== -->
-
         <main
             id="app-container"
             tabindex="-1"
             aria-live="polite"
-        >
-        </main>
-
-
-        <!-- =====================================================
-             FOOTER
-        ====================================================== -->
+        ></main>
 
         <footer class="site-footer">
 
-            <p>
-                Beyond Say No
-            </p>
-
-            <p>
-                Interactive educational intervention
-            </p>
+            <p>Beyond Say No</p>
+            <p>Interactive educational intervention</p>
 
         </footer>
 
     </div>
-
-
-    <!-- =========================================================
-         JAVASCRIPT
-    ========================================================== -->
 
     <script src="script.js"></script>
 
